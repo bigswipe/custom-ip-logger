@@ -1,0 +1,94 @@
+/* Modal Styles */
+.iplogger-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 100000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    
+    /* New styles for centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iplogger-modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 650px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    position: relative;
+    border-radius: 5px;
+    
+    /* New styles for scrolling */
+    max-height: 80vh; /* Max height is 80% of the viewport height */
+    overflow-y: auto; /* A vertical scrollbar will appear ONLY if needed */
+}
+
+.iplogger-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.iplogger-close:hover,
+.iplogger-close:focus {
+    color: #333;
+    text-decoration: none;
+}
+
+.iplogger-modal-content h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Styles for the table inside the modal */
+.iplogger-smart-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.iplogger-smart-data-table td {
+    padding: 10px 8px;
+    border: 1px solid #eee;
+    vertical-align: top;
+    word-break: break-word;
+}
+
+.iplogger-smart-data-table td:first-child {
+    font-weight: 600;
+    width: 35%;
+    background-color: #f9f9f9;
+}
+
+
+/* New styles for map in modal */
+.iplogger-modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.iplogger-data-table-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+.iplogger-map-container {
+    flex: 1;
+    min-width: 300px;
+    min-height: 350px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
